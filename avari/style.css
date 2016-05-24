@@ -367,9 +367,8 @@ blockquote,
 q {
 	quotes: "" "";
 	background: #EFEFEF;
-  border-left: 10px solid #46C3AA;
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 0.5em 2em;
 }
 
 hr {
@@ -424,24 +423,21 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
+	border-radius: 4px;
+	background: #16A085;
+	color: white;
 	font-size: 12px;
-	font-size: 0.75rem;
+	font-size: 1rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	padding: .6em 1em;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.19);
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	background-color: #46C3AA;
 }
 
 button:focus,
@@ -452,8 +448,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 input[type="text"],
@@ -536,7 +531,7 @@ a {
 }
 
 a:visited {
-	color: inherit;
+	color: #16A085;
 }
 
 a:hover,
@@ -782,7 +777,6 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-.byline,
 .updated:not(.published) {
 	display: none;
 }
@@ -795,12 +789,12 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1em 0 0;
 }
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 1em;
 }
 
 /*--------------------------------------------------------------
@@ -931,13 +925,24 @@ object {
 # Avari Specific Styling
 --------------------------------------------------------------*/
 
-#masthead {
+
+#header-wrapper {
 	background-color: #16A085;
+}
+
+#masthead {
 	padding: 40px 1.5em;
 	color: #f9f9f9;
 	background-image: url('images/masthead-owl.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#masthead .site-branding {
+	width: calc(100% - 288px);
 }
 
 
@@ -951,7 +956,7 @@ object {
 	font-weight: normal;
 }
 
-#masthead .site-title a:hover {
+#masthead .site-title a:hover, #masthead .site-title a:visited {
 	color: inherit;
 }
 
@@ -959,6 +964,12 @@ object {
 	margin: 0;
 	font-size: 1.2em;
 	opacity: 0.75;
+}
+
+#content {
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #content #primary {
@@ -971,4 +982,37 @@ object {
 	float: left;
 	width: 300px;
 	padding: 1.5em;
+}
+
+.page-content, .entry-content, .entry-summary {
+	font-size: 1.1em;
+}
+
+header.entry-header {
+	padding-top: 1em;
+}
+
+.entry-meta {
+	color: #636363;
+}
+
+.entry-title {
+	margin: 0;
+}
+
+.entry-title a {
+	color: #2F2F2F;
+}
+
+/*--------------------------------------------------------------
+## Academic Blogger's Toolkit
+--------------------------------------------------------------*/
+
+#abt-smart-bib-container {
+	border-top: 1px solid #16A085;
+}
+
+.abt_cite {
+	color: #16A085;
+	font-weight: bold;
 }
