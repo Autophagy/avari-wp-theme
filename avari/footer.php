@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'avari' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'avari' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'avari' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'avari' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'avari' ), 'avari', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<?php printf( esc_html__( '%1$s theme by %2$s', 'avari' ), 'avari', '<a href="http://autophagy.github.io/" rel="designer">autophagy</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
