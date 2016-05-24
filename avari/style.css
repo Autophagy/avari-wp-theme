@@ -42,13 +42,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Avari Specific Styling
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: 'PT Serif', serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -266,8 +267,8 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
+	color: #2F2F2F;
+	font-family: 'PT Serif', serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -352,7 +353,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #f7f7f7; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -525,17 +526,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #5f7A4C;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 a:visited {
-	color: purple;
+	color: inherit;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #789A60;
 }
 
 a:focus {
@@ -918,4 +921,34 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Avari Specific Styling
+--------------------------------------------------------------*/
+
+#masthead {
+	background-color: #C8DCB9;
+	padding: 40px 0px;
+}
+
+
+#masthead .site-title {
+	font-size: 3.95em;
+	margin: 0;
+	line-height: 1;
+}
+
+#masthead .site-title a {
+	font-weight: normal;
+}
+
+#masthead .site-title a:hover {
+	color: inherit;
+}
+
+#masthead .site-description {
+	margin: 0;
+	font-size: 1.2em;
+	opacity: 0.75;
 }
