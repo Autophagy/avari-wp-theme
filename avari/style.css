@@ -366,6 +366,10 @@ q:after {
 blockquote,
 q {
 	quotes: "" "";
+	background: #EFEFEF;
+  border-left: 10px solid #46C3AA;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 }
 
 hr {
@@ -377,7 +381,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
 }
 
 ul {
@@ -526,7 +530,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #5f7A4C;
+	color: #16A085;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -538,7 +542,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #789A60;
+	color: #46C3AA;
 }
 
 a:focus {
@@ -928,8 +932,12 @@ object {
 --------------------------------------------------------------*/
 
 #masthead {
-	background-color: #C8DCB9;
-	padding: 40px 0px;
+	background-color: #16A085;
+	padding: 40px 1.5em;
+	color: #f9f9f9;
+	background-image: url('images/masthead-owl.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
 }
 
 
@@ -951,4 +959,16 @@ object {
 	margin: 0;
 	font-size: 1.2em;
 	opacity: 0.75;
+}
+
+#content #primary {
+	float: left;
+	width: calc(100% - 300px);
+	padding: 1.5em;
+}
+
+#content #secondary {
+	float: left;
+	width: 300px;
+	padding: 1.5em;
 }
