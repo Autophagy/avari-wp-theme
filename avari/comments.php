@@ -38,6 +38,7 @@ if ( post_password_required() ) {
 		<?php endif; // Check for comment navigation. ?>
 
 		<div class="comment-list">
+			<h2>Comments</h2>
 			<?php
 				wp_list_comments( array(
 					'style'      => 'div',
@@ -69,7 +70,9 @@ if ( post_password_required() ) {
 	<?php
 	endif;
 
-	comment_form();
+	comment_form( array(
+		'title_reply' => 'Leave a Comment'
+	));
 	?>
 
 </div><!-- #comments -->

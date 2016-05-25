@@ -787,7 +787,7 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 1em;
 }
 
 .updated:not(.published) {
@@ -967,6 +967,7 @@ object {
 
 #masthead .site-title a {
 	font-weight: normal;
+	color: inherit;
 }
 
 #masthead .site-title a:hover, #masthead .site-title a:visited {
@@ -1026,6 +1027,12 @@ header.entry-header {
 	color: #2F2F2F;
 }
 
+.entry-footer {
+	border-top: 1px solid #16A085;
+  border-bottom: 1px solid #16A085;
+  padding: 1.5em 0;
+}
+
 .entry-footer>span {
 	display: block;
 }
@@ -1035,7 +1042,7 @@ header.entry-header {
 }
 
 #comments .comment {
-	padding: 1em;
+	padding: 1.5em;
 }
 
 #colophon {
