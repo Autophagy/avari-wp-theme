@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'avari' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'avari' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( '%1$s theme by %2$s', 'avari' ), 'avari', '<a href="http://autophagy.github.io/" rel="designer">autophagy</a>' ); ?>
+			<?php printf( esc_html__( '%1$s theme by %2$s', 'avari' ), 'Avari', '<a href="http://autophagy.github.io/" rel="designer">Autophagy</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

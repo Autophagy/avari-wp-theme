@@ -413,6 +413,19 @@ img {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+	max-width: 100%;
+}
+
+table thead th {
+	font-weight: bold;
+}
+
+table th, table td {
+	padding: 5px;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #EFEFEF;
 }
 
 /*--------------------------------------------------------------
@@ -982,6 +995,15 @@ object {
 	float: left;
 	width: 300px;
 	padding: 1.5em;
+	margin-top: 1em;
+}
+
+#content #secondary .search-submit {
+	display: none;
+}
+
+#content #secondary .search-field {
+	width: 100%;
 }
 
 .page-content, .entry-content, .entry-summary {
@@ -1002,6 +1024,29 @@ header.entry-header {
 
 .entry-title a {
 	color: #2F2F2F;
+}
+
+.entry-footer>span {
+	display: block;
+}
+
+#comments>.comment-list>.comment:nth-of-type(odd) {
+	background-color: #EFEFEF;
+}
+
+#comments .comment {
+	padding: 1em;
+}
+
+#colophon {
+	background-color: #16A085;
+	color: #F9F9F9;
+	padding: 0.5em;
+	text-align: center;
+}
+
+#colophon a, #colophon a:hover {
+	color: #F9F9F9;
 }
 
 /*--------------------------------------------------------------
