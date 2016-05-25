@@ -948,7 +948,7 @@ object {
 	color: #f9f9f9;
 	background-image: url('images/masthead-owl.png');
 	background-repeat: no-repeat;
-	background-position: right bottom;
+	background-position: calc(100% - 1.5em) 100%;
 	max-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
