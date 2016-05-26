@@ -1,5 +1,5 @@
 css = "<style type='text/css'> \
-  @media screen and (min-width: 1024px) { \
+  @media screen and (min-width: 1025px) { \
     #content #secondary .widget-title + * { \
       display: block !important; \
     } \
@@ -20,7 +20,7 @@ css = "<style type='text/css'> \
 $(css).appendTo('head');
 
 function showMenuItem(e) {
-  if ($(window).width() < 1024) {
+  if ($(window).width() < 1025) {
     var rightPointer = '►'
     var downPointer = '▼';
 

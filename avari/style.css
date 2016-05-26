@@ -939,6 +939,9 @@ object {
 # Avari Specific Styling
 --------------------------------------------------------------*/
 
+body {
+	min-width: 425px;
+}
 
 #header-wrapper {
 	background-color: #16A085;
@@ -951,6 +954,7 @@ object {
 	background-repeat: no-repeat;
 	background-position: calc(100% - 1.5em) 100%;
 	max-width: 1300px;
+	min-width: 425px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1066,6 +1070,17 @@ header.entry-header {
 }
 
 @media screen and (max-width: 1024px) {
+
+	#masthead {
+		background-size: 190px;
+		height: 134px;
+	}
+
+	#masthead .site-branding {
+		font-size: 0.6em;
+    width: calc(100% - 200px);
+	}
+
 	#content #primary, #content #secondary {
 		width: 100%;
 		float: none;
@@ -1083,6 +1098,19 @@ header.entry-header {
 	#content #secondary .search-submit {
 		display: inline;
 		width: 82px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#masthead {
+		padding: 30px 1.5em;
+	}
+
+	#masthead .site-branding {
+	}
+
+	#masthead .site-branding .site-description {
+		display: none;
 	}
 }
 
