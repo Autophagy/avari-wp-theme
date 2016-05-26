@@ -1071,6 +1071,10 @@ header.entry-header {
 		float: none;
 	}
 
+	#content #secondary {
+		background-color: #EFEFEF;
+	}
+
 	#content #secondary .search-field {
     width: calc(100% - 86px);
 		max-width: 300px;
