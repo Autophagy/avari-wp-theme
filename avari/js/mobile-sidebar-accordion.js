@@ -1,7 +1,7 @@
 css = "<style type='text/css'> \
   @media screen and (min-width: 1024px) { \
     #content #secondary .widget-title + * { \
-      display: block; \
+      display: block !important; \
     } \
   } \
   @media screen and (max-width: 1024px) { \
