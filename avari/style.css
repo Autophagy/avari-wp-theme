@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Avari Specific Styling
+	## Academic Blogger's Toolkit
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -1007,6 +1008,14 @@ object {
 	width: 100%;
 }
 
+#content #secondary .widget-dropdown {
+	cursor: default;
+}
+
+#content #secondary .widget-dropdown-arrow {
+	display: none;
+}
+
 .page-content, .entry-content, .entry-summary {
 	font-size: 1.1em;
 }
@@ -1055,6 +1064,24 @@ header.entry-header {
 #colophon a, #colophon a:hover {
 	color: #F9F9F9;
 }
+
+@media screen and (max-width: 1024px) {
+	#content #primary, #content #secondary {
+		width: 100%;
+		float: none;
+	}
+
+	#content #secondary .search-field {
+    width: calc(100% - 86px);
+		max-width: 300px;
+	}
+
+	#content #secondary .search-submit {
+		display: inline;
+		width: 82px;
+	}
+}
+
 
 /*--------------------------------------------------------------
 ## Academic Blogger's Toolkit
