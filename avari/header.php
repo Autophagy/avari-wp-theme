@@ -19,10 +19,11 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/mobile-sidebar-accordion.js"></script>
 
 <?php wp_head(); ?>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/mobile-sidebar-accordion.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

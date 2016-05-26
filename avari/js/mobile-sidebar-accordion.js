@@ -1,19 +1,23 @@
-document.querySelector('style').textContent +=
-  "@media screen and (min-width: 1024px) { \
+css = "<style type='text/css'> \
+  @media screen and (min-width: 1024px) { \
     #content #secondary .widget-title + * { \
-      display: block !important; \
+      display: block; \
     } \
   } \
   @media screen and (max-width: 1024px) { \
     #content #secondary .widget-dropdown { \
-      cursor: pointer !important; \
+      cursor: pointer; \
     } \
     #content #secondary .widget-dropdown-arrow { \
-      display: inline !important; \
+      display: inline; \
     } \
     #content #secondary .widget-title + * { \
       display: none; \
-    }"
+    } \
+  }\
+</style>"
+
+$(css).appendTo('head');
 
 function showMenuItem(e) {
   if ($(window).width() < 1024) {
