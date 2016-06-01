@@ -1046,11 +1046,11 @@ header.entry-header {
 	display: block;
 }
 
-#comments>.comment-list>.comment:nth-of-type(odd) {
+#comments>.comment-list>.odd {
 	background-color: #EFEFEF;
 }
 
-#comments .comment {
+#comments .comment, #comments .pingback {
 	padding: 1.5em;
 }
 
